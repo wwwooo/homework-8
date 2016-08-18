@@ -1,0 +1,175 @@
+* {
+  transition: all 0.9s;
+}
+
+body {
+  background: #f9f9f9;
+  font: 20px 'LeagueGothic';
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.header {
+  font-size: 0;
+  height: 846px;
+  background: #999 url(../img/bg-hd.jpg) center 0 no-repeat;
+}
+
+.header__box {
+  padding-top: 50px;
+}
+
+.header__title {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__title--end {
+  color: #714E7F;
+}
+
+.header__menu {
+  font-size: 24px;
+}
+
+.menu__li {
+  display: inline-block;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid #edbfff;
+}
+
+.sliders__img {
+  display: none;
+}
+
+@media screen and (min-width: 961px) {
+  .header__box {
+    height: 280px;
+  }
+
+  .header__logo {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+  }
+
+  .header__menu {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+  }
+
+  .menu {
+    text-align: right;
+  }
+
+  .menu__li {
+    margin-left: 50px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .wrapper {
+    width: 768px;
+  }
+  
+  .header__box {
+    height: 244px;
+  }
+
+  .header__menu {
+    width: 100%;
+  }
+
+  .menu {
+    text-align: left;
+  }
+
+  .menu__li {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__box {
+    height: 205px;
+  }
+
+  .header__logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__menu {
+    position: absolute;
+    left: 50%;
+    width: 245px;
+    height: 35px;
+    transform: translatex(-50%);
+    text-align: center;
+    overflow: hidden;
+    border-radius: 13px;
+    z-index: 90;
+    transition: none;
+  }
+
+  .header__menu:hover {
+    height: auto;
+    background: rgba(54, 41, 62, 0.8);
+    transition: all .2;
+  }
+
+  .menu__li {
+    display: block;
+    margin: 0;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .menu__li:hover {
+    border-bottom: 2px solid #edbfff;
+    background: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 5px #fff;
+    transition: none;
+  }
+
+  .menu__link {
+    border-bottom: 2px solid #edbfff;
+  }
+
+  .menu__link:hover {
+    border-bottom: 0;
+    transition: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .wrapper {
+    width: 440px;
+  }
+}
+
+@media (max-width: 479px) {
+  .wrapper {
+    width: 280px;
+  }
+  
+  .header {
+    height: 515px;
+  }
+}
