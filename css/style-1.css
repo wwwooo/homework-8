@@ -309,7 +309,7 @@ body {
 
 .updates__item {
   position: relative;
-  display: inline-block;
+  //display: inline-block;
   margin: 6px 0;
   height: 50px;
   padding-left: 60px;
@@ -339,7 +339,7 @@ body {
 }
 
 .updates__subtitle {
-  font: 600 16px OpenSansRegular;
+  font: bold 16px OpenSansRegular;
 }
 
 .updates__info {
