@@ -8,6 +8,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
   margin: 0 auto;
   width: 960px;
   border-left: 1px solid;
@@ -241,11 +242,11 @@ body {
 }
 
 .testimonial__title--pink {
-  color: pink;
+  color: #edbfff;
 }
 
 .testimonial__bq {
-  position: relative;
+  //position: relative;
   margin: 0 30px 30px;
   font: 16px OpenSansLight;
   overflow: hidden;
@@ -258,16 +259,19 @@ body {
   background: #F9F9F9;
 }
 
-.navigator__link--white {
+.testimonial .navigator__link {
   border: 1px solid #f0f0f0;
   background: #fff;
 }
 
-.navigator__link--white:hover:after,
-.navigator__link--hoverWhite:after {
+.testimonial .navigator__link:hover:after,
+.testimonial .navigator__link--hover:after {
+  display: block;
+  content: '';
   width: 11px;
   height: 11px;
   border: 2px solid #fff;
+  border-radius: 50%;
   background: #555;
 }
 
@@ -323,6 +327,74 @@ body {
   color: #000;
 }
 
+.partners {
+  padding: 50px 0;
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+  font-size: 0;
+}
+
+.partrers__item {
+  display: inline-block;
+  margin: 0 40px;
+  vertical-align: middle;
+}
+
+.footer__info {
+  padding: 70px 0;
+  background: #ECECEC;
+  font-size: 0;
+}
+
+.info__blocks {
+  display: inline-block;
+  width: 33.33336%;
+  height: 190px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.info__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #454545;
+}
+
+.info__text {
+  width: 250px;
+  font: 15px OpenSansLight;
+  color: #787878;
+}
+
+.footer__menu {
+  position: relative;
+  height: 200px;
+  background: #333 url(../img/ft-bg.jpg) bottom center;
+  background-size: cover;
+}
+
+.footer__menu .menu {
+  display: block;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.footer__menu .menu__li {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.footer__designed {
+  position: absolute;
+  font: 12px OpenSansLight;
+  color: #fff;
+}
+
+.footer__designed--link {
+  color: #fff;
+  font: 16px LeagueGothic;
+}
+
 @media screen and (min-width: 961px) {
   .header__box {
     height: 280px;
@@ -368,6 +440,36 @@ body {
   
   .updates__link {
     right: 15px;
+  }
+  
+  .partrers__item {
+    margin: 0 4%
+  }
+  
+  .info__title--logo-from-960 {
+    font-size: 48px;
+  }
+  
+  .info__title--logo-from-960-end {
+    color: #b9b9b9;
+  }
+  
+  .info__copyright {
+    color: #b9b9b9;
+    font: italic 14px OpenSansLight;
+  }
+  
+  .info__title--news {
+    display: none;
+  }
+  
+  .info__title--news-from-960 {
+    display: block;
+  }
+  
+  .footer__designed {
+    bottom: 5px;
+    right: 0px;
   }
 }
 
@@ -447,6 +549,35 @@ body {
   
   .updates__item {
     width: 300px;
+  }
+  
+  .partners {
+    padding-left: 0px;
+    text-align: left;
+  }
+  
+  .partrers__item {
+    margin: 0 3.5%
+  }
+  
+  .info__title--logo-from-960,
+  .info__title--logo-from-960-end,
+  .info__title--comments-from-960,
+  .info__copyright {
+    display: none;
+  }
+  
+  .info__title {
+    font-size: 24px
+  }
+  
+  .info__text {
+    width: 210px;
+  }
+  
+  .footer__designed {
+    bottom: -60px;
+    right: 0px;
   }
 }
 
@@ -534,6 +665,13 @@ body {
   .updates-wrap {
     width: 100%;
   }
+  
+  
+  .footer__designed {
+    top: 90px;
+    left: 50%;
+    transform: translatex(-50%);
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -592,9 +730,49 @@ body {
   .updates__link {
     right: -15px;
   }
+  
+  .partrers__item {
+    margin: 10px 7%;
+  }
+  
+  .info__blocks {
+    width: 100%;
+  }
+  
+  .info__title--logo-from-960,
+  .info__title--logo-from-960-end,
+  .info__title--comments-from-960,
+  .info__copyright {
+    display: none;
+  }
+  
+  .info__title {
+    margin: 5px 0;
+    font-size: 24px
+  }
+  
+  .info__text {
+    width: 100%;
+  }
+  
+  .footer__menu .menu__li {
+    display: inline;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    margin: 0 9px;
+  }
+  
+  .footer__menu .menu__link {
+    border: 0;
+  }
+  
+  .footer__designed {
+    bottom: 20px;
+  }
 }
 
-@media (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .wrapper {
     width: 280px;
   }
@@ -667,5 +845,18 @@ body {
   .updates__subtitle {
     width: 145px;
     overflow: hidden;
+  }
+  
+  .partrers__item {
+    margin: 20px 8%;
+  }
+  
+  .footer__info,
+  .footer__menu .menu {
+    display: none;
+  }
+  
+  .footer__designed {
+    top: 40px;
   }
 }
