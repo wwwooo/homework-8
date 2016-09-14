@@ -10,8 +10,6 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 960px;
-/*   border-left: 1px solid;
-  border-right: 1px solid; */
 }
 
 .header {
@@ -140,8 +138,8 @@ body {
 
 .navigator__link:hover:after,
 .navigator__link--hover:after {
-  display: block;
   content: '';
+  display: block;
   width: 9px;
   height: 9px;
   border: 3px solid rgb(63, 66, 74);
@@ -170,11 +168,11 @@ body {
 .blurb--1:before,
 .blurb--2:before,
 .blurb--3:before {
+  content: '';
   display: block;
   position: absolute;
   top: 5px;
   left: 10px;
-  content: '';
   width: 28px;
   height: 30px;
   background: url(../img/sprite.png) no-repeat -54px center;
@@ -237,35 +235,28 @@ body {
 
 .testimonial {
   position: relative;
+}
+
+.testinomial-box {
+  position: relative;
+  padding: 30px 30px 30px 40px;
   background: #fff;
+  box-shadow: 0px 1px 2px rgba(100, 100, 100, 0.1);
 }
 
 .testimonial:before {
+  content: '';
   display: block;
   position: absolute;
   top: 22px;
   left: -25px;
-  content: '';
   width: 50px;
   height: 50px;
   background: url(../img/testimonial-img.png) no-repeat;
+  z-index: 200;
 }
 
-/* .testimonial:after {
-  display: block;
-  position: absolute;
-  right: 50px;
-  bottom: 30px;
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 25px solid #fff;
-  border-left: 25px solid transparent;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-} */
-
 .testimonial__title {
-  padding: 30px 0 0 30px;
   font: 30px LeagueGothic;
   text-transform: uppercase;
 }
@@ -275,7 +266,6 @@ body {
 }
 
 .testimonial__bq {
-  margin: 0 30px 30px;
   font: 16px OpenSansLight;
   overflow: hidden;
 }
@@ -294,8 +284,8 @@ body {
 
 .testimonial .navigator__link:hover:after,
 .testimonial .navigator__link--hover:after {
-  display: block;
   content: '';
+  display: block;
   width: 11px;
   height: 11px;
   border: 2px solid #fff;
@@ -313,10 +303,10 @@ body {
 }
 
 .updates__item:before {
+  content: '';
   display: block;
   position: absolute;
   left: 0;
-  content: '';
   width: 50px;
   height: 50px;
   background: url(../img/updates-bg.jpg) no-repeat 0 -15px;
@@ -377,7 +367,7 @@ body {
 .info__blocks {
   display: inline-block;
   width: 30%;
-  height: 190px;
+  height: 198px;
   overflow: hidden;
   font-size: 20px;
 }
@@ -404,6 +394,7 @@ body {
   width: 270px;
   overflow: hidden;
   font: 15px OpenSansLight;
+  line-height: 23px;
   color: #787878;
 }
 
@@ -439,8 +430,6 @@ body {
   font: 16px LeagueGothic;
   color: #fff;
 }
-
-
 
 @media screen and (min-width: 961px) {
   .header__box {
@@ -484,7 +473,7 @@ body {
   .sliders__img {
     right: 70px;
   }
-  
+
   .sliders__arrow {
     display: none;
   }
@@ -510,6 +499,7 @@ body {
   .info__copyright {
     display: block;
     font: italic 14px OpenSansLight;
+    text-shadow: 1px 2px 0px rgba(255, 255, 255, 1);
     color: #b9b9b9;
   }
 
@@ -529,7 +519,7 @@ body {
     bottom: 5px;
     right: 0px;
   }
-  
+
   @media screen and (min-width: 1284px) {
     .header__sliders {
       position: relative;
@@ -550,13 +540,12 @@ body {
     .sliders__arrow--right {
       right: 5%;
     }
-    
+
     .sliders__navigator {
       left: 65%;
     }
   }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
   .wrapper {
@@ -821,7 +810,7 @@ body {
   .partrers__item {
     margin: 10px 7%;
   }
-  
+
   .footer__info {
     padding-bottom: 20px;
   }
@@ -830,7 +819,7 @@ body {
     width: 100%;
     height: 180px;
   }
-  
+
   .info__blocks--middle {
     padding: 0;
   }
@@ -842,7 +831,7 @@ body {
 
   .info__text {
     width: 100%;
-    height: 85px;
+    height: 95px;
   }
 
   .footer__menu .menu__li {
